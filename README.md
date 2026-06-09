@@ -1,262 +1,100 @@
-\# Document Intelligence Platform
+# Document Intelligence Platform
 
+> Top 15 among 1000+ registrations in the Appian AI Hackathon
 
+A GenAI-powered workflow for converting unstructured PDFs and images into structured, schema-compliant JSON records using OCR, vision-language models and validation-driven extraction pipelines.
 
-\*\*Top 15 / 1000+ Registrations — Appian AI Hackathon\*\*
+## Overview
 
+Organizations process large volumes of invoices, forms, IDs and reports containing critical information. Manual extraction is slow, error-prone and difficult to scale.
 
+This project automates document understanding by combining OCR, classification, PII detection and structured information extraction into a unified pipeline capable of generating machine-readable JSON outputs.
 
-A multimodal GenAI pipeline for transforming unstructured PDFs and images into structured, schema-compliant JSON records through OCR, document classification, PII detection and information extraction.
-
-
-
-\---
-
-
-
-\## Problem Statement
-
-
-
-Organizations routinely process large volumes of unstructured documents containing critical information such as names, addresses, identifiers, dates and financial records. Manual extraction is often slow, error-prone and difficult to scale across heterogeneous document formats.
-
-
-
-This project aims to automate document understanding and convert unstructured records into machine-readable structured data.
-
-
-
-\---
-
-
-
-\## Features
-
-
-
-\* OCR-based text extraction from PDFs and images
-
-\* Automated document classification
-
-\* PII detection and sensitive information identification
-
-\* Structured information extraction using GenAI
-
-\* Schema-constrained JSON generation
-
-\* Validation and consistency checking pipeline
-
-
-
-\---
-
-
-
-\## System Architecture
-
-
+## Architecture
 
 ```text
-
 PDF / Image
-
-&#x20;     │
-
-&#x20;     ▼
-
-&#x20;OCR Extraction
-
-&#x20;     │
-
-&#x20;     ▼
-
+     │
+     ▼
+ OCR Extraction
+     │
+     ▼
 Document Classification
-
-&#x20;     │
-
-&#x20;     ▼
-
-&#x20;  PII Detection
-
-&#x20;     │
-
-&#x20;     ▼
-
+     │
+     ▼
+  PII Detection
+     │
+     ▼
 Information Extraction
-
-&#x20;     │
-
-&#x20;     ▼
-
-&#x20;Schema Validation
-
-&#x20;     │
-
-&#x20;     ▼
-
-&#x20;Structured JSON
-
+     │
+     ▼
+ Schema Validation
+     │
+     ▼
+ Structured JSON
 ```
 
+## Features
 
+* OCR-based text extraction from PDFs and images
+* Automated document classification
+* PII detection and sensitive information identification
+* Structured information extraction using GenAI models
+* Schema validation and consistency checking
+* Generation of structured JSON records
 
-\---
+## Tech Stack
 
+### AI & LLMs
 
+* Groq API
+* Vision Language Models (VLMs)
+* Prompt Engineering
 
-\## Technology Stack
+### Backend
 
+* Python
+* Pydantic
+* JSON Schema Validation
 
+### Processing
 
-\### AI \& LLMs
+* OCR
+* Document Parsing
+* Structured Output Generation
 
+## Key Statistics
 
+* 6-stage document processing pipeline
+* 3 dedicated AI modules
+* 10+ validation and consistency checks
+* Top 15 finish among 1000+ registrations
 
-\* Groq API
-
-\* Vision Language Models (VLMs)
-
-\* Prompt Engineering
-
-
-
-\### Backend
-
-
-
-\* Python
-
-\* Pydantic
-
-\* JSON Schema Validation
-
-
-
-\### Processing
-
-
-
-\* OCR
-
-\* Document Parsing
-
-\* Structured Output Generation
-
-
-
-\---
-
-
-
-\## Key Components
-
-
-
-\### Document Classification
-
-
-
-Automatically categorizes incoming documents into predefined document classes for downstream processing.
-
-
-
-\### PII Detection
-
-
-
-Identifies and extracts sensitive information including names, addresses, identification numbers and contact information.
-
-
-
-\### Information Extraction
-
-
-
-Uses schema-guided prompting to extract relevant entities and generate structured outputs.
-
-
-
-\### Validation Layer
-
-
-
-Ensures generated outputs conform to predefined schemas and consistency constraints before final export.
-
-
-
-\---
-
-
-
-\## Example Output
-
-
+## Example Output
 
 ```json
-
 {
-
-&#x20; "document\_type": "Invoice",
-
-&#x20; "invoice\_number": "INV-1024",
-
-&#x20; "date": "2025-01-01",
-
-&#x20; "vendor": "ABC Pvt Ltd",
-
-&#x20; "amount": 4500
-
+  "document_type": "Invoice",
+  "vendor": "ABC Pvt Ltd",
+  "invoice_number": "INV-1024",
+  "date": "2025-01-01",
+  "amount": 4500
 }
-
 ```
 
+## Results
 
+* Ranked among the Top 15 teams out of 1000+ registrations in the Appian AI Hackathon.
+* Automated conversion of unstructured documents into schema-compliant JSON records.
+* Developed an end-to-end GenAI workflow integrating OCR, extraction and validation components.
 
-\---
+## Future Work
 
+* Support additional document categories
+* Confidence scoring for extracted fields
+* Human-in-the-loop validation
+* Batch document processing
+* Cloud deployment and API integration
 
-
-\## Results
-
-
-
-\* Ranked among the \*\*Top 15 teams from 1000+ registrations\*\* in the Appian AI Hackathon.
-
-\* Built a complete 6-stage document processing pipeline integrating OCR, classification, extraction and validation.
-
-\* Generated structured, schema-compliant JSON outputs from diverse unstructured document formats.
-
-
-
-\---
-
-
-
-\## Future Improvements
-
-
-
-\* Support additional document categories
-
-\* Confidence scoring for extracted fields
-
-\* Human-in-the-loop verification
-
-\* Multi-document workflows
-
-\* Deployment as a scalable document processing service
-
-
-
-\---
-
-
-
-\## Team
-
-
-
-Developed as part of the Appian AI Hackathon.
-
-
-
+```
+```
